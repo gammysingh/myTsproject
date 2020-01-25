@@ -1,0 +1,13 @@
+/* .ready_fly {
+    background-image:url(https://cms.travelsouq.com//uploads/3e3d289….jpg) no-repeat center center !important;
+    width: 100% !important;
+    background-size: cover !important;
+    position: relative !important;
+    height: 220px !important;
+} */
+@media(min-width: 300px) and (max-width: 480px) {
+    .btn:focus {
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25) !important;
+}
+}

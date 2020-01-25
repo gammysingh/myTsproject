@@ -1,0 +1,25 @@
+@media(min-width: 300px) and (max-width: 370px) {
+    .popular_countries h3{
+        padding-top: 60px;
+    }
+    .countries{
+        margin: 15px 0 0 0;
+    }
+    .countries ul li a {
+        font-size: 12px;
+        margin-left: 36px;
+    }
+}
+
+@media(min-width: 371px) and (max-width: 480px) {
+    .popular_countries h3{
+        padding-top: 60px;
+    }
+    .countries{
+        margin: 15px 0 0 0;
+    }
+    .countries ul li a {
+        font-size: 15px;
+        margin-left: 36px;
+    }
+}

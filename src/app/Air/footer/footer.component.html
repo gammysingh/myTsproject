@@ -1,0 +1,80 @@
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 sub">
+        <div class="subscribe_sec">
+          <div class="row">
+            <div class="col-sm-12 col-md-1"></div>
+            <div class="col-sm-12 col-md-4">
+              <p>{{labels['subscribe-text']}}</p>
+            </div>
+            <div class="col-sm-12 col-md-6">
+              <div [formGroup]="subscribeForm" class="row input-group">
+                <div class="col-md-6">
+                  <input type="email" class="form-control" formControlName="email" placeholder="Enter email">
+                  <div *ngIf="emailReq.length > 0">
+                    <small class="text-danger">{{emailReq}}</small>
+                  </div>
+                  <div *ngIf="emailPat.length > 0">
+                    <small class="text-danger">{{emailPat}}</small>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <span class="input-group-btn">
+                    <button class="btn" type="submit" (click)="onSubscribeEmail()">Subscribe</button>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-sm-1 col-md-1"></div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 text-center">
+          <ul class="social d-lg-none d-md-none d-sm-block">
+              <li *ngFor="let socialicons of footerSocialIcons">
+                <a href="{{socialicons.link}}"><img src="{{strapiURL}}{{socialicons.icon.url}}"></a>
+              </li>
+            </ul>
+        <ul>
+          <li *ngFor="let data of footerData"><a href="{{data.link}}">{{data.value}}</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <div class="copy_right">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <p>{{labels['footer-copyright']}}</p>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <div class="row float-right">
+          <ul class="social d-none d-md-block d-lg-block">
+            <li *ngFor="let socialicons of footerSocialIcons">
+              <a href="{{socialicons.link}}"><img src="{{strapiURL}}{{socialicons.icon.url}}"></a>
+            </li>
+          </ul>
+        </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+<section class="foot_bottom">
+  <!-- <div class="container"> -->
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <img src="{{strapiURL}}{{cardImage.image.url}}" *ngFor="let cardImage of footerCardImages" />
+      </div>
+
+    </div>
+  <!-- </div> -->
+</section>

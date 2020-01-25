@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Travel Souq</title>
+  <base href="/">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="assets/css/flaticon.css">
+  <link rel="stylesheet" href="assets/css/docs.theme.min.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <!-- <link rel="stylesheet" href="assets/css/responsive.css"> -->
+  <!-- <link rel="stylesheet" href="assets/css/main.css" media="all"> -->
+  <link href="assets/vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+</head>
+<body>
+  <app-root></app-root>
+  <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/vendor/datepicker/moment.min.js"></script>
+<script src="assets/vendor/datepicker/daterangepicker.js"></script>
+  <!-- Main JS-->
+  <script src="assets/js/global.js"></script>
+  <script src="assets/js/owl.carousel.js"></script>	
+  <script>
+    $(document).ready(function () {
+      $('.owl-carousel').owlCarousel({
+        loop: true,
+        dots: true,
+        autoplay: true,
+        margin: 10,
+        responsiveClass: true,
+        autoplayTimeout: 3000,
+        responsive: {
+          0: {
+            items: 1,
+            dots: true,
+            nav: false
+          },
+          600: {
+            items: 1,
+            dots: true,
+            nav: false
+          },
+          1000: {
+            items: 2,
+            nav: false,
+            loop: true,
+            dots: true,
+            margin: 20
+          }
+        }
+      })
+    })
+  </script>
+
+<script>
+
+$(".rotate").click(function () {
+    $(this).toggleClass("down");
+})
+</script>
+
+<script>
+function getSelectedValue(id) {
+  return $("#" + id).find("dt a span.value").html();
+}
+$("button").click(function(e){
+  var val = getSelectedValue('country');
+
+});
+
+$(".dropdown dt a").click(function(e) {
+  $(".dropdown dd ul").toggle();
+  e.preventDefault();
+});
+
+$(".dropdown dd ul li a").click(function() {
+  var text = $(this).html();
+  $(".dropdown dt a span").html(text);
+  $(".dropdown dd ul").hide();
+  
+}); 
+
+$(document).bind('click', function(e) {
+    var $clicked = $(e.target);
+    if (! $clicked.parents().hasClass("dropdown"))
+        $(".dropdown dd ul").hide();
+});
+
+</script>
+
+
+<script>
+function getSelectedValue(id) {
+  return $("#" + id).find("dt a span.value").html();
+}
+$("button").click(function(e){
+  var val = getSelectedValue('country2');
+
+});
+
+$(".dropdowns dt a").click(function(e) {
+  $(".dropdowns dd ul").toggle();
+  e.preventDefault();
+});
+
+$(".dropdowns dd ul li a").click(function() {
+  var text = $(this).html();
+  $(".dropdowns dt a span").html(text);
+  $(".dropdowns dd ul").hide();
+  
+}); 
+
+$(document).bind('click', function(e) {
+    var $clicked = $(e.target);
+    if (! $clicked.parents().hasClass("dropdowns"))
+        $(".dropdowns dd ul").hide();
+});
+
+</script>
+  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+</body>
+</html>

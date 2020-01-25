@@ -1,0 +1,16 @@
+<section class="popular_countries">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h3>{{ labels['popular-country-text'] }}</h3>
+        <p>{{ labels['popular-country-description'] }}</p>
+      </div>
+      <div class="countries">
+        <ul>
+            <li *ngFor="let country of data"><a href="{{country.link}}">{{country.name}}</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,28 @@
+<section id="demos" class="offers">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 main_heading">
+        <h2>Offers in store for you</h2>
+        <p>View all live offers for your flight bookings</p>
+      </div>
+      <div class="columns">
+        <owl-carousel *ngIf="offers.length" [options]="mySlideOptions" [items]="images"
+          [carouselClasses]="['owl-theme', 'sliding']">
+          <div class="item" *ngFor="let offer of offers;let i = index">
+            <div *ngIf="offer.type=='offertype1'" class="offer_bg">
+              <h3>{{offer.title}}</h3>
+              <p [innerHTML]="offer.description"></p>
+              <a class="btn float-right">{{offer.btntext}}</a>
+            </div>
+            <div *ngIf="offer.type=='offertype2'" class="offer_details">
+              <h3>{{offer.title}}</h3>
+              <p [innerHTML]="offer.description"></p>
+              <span class="float-left">{{offer.bottomtext}}</span>
+              <a class="btn float-right">{{offer.btntext}}</a>
+            </div>
+          </div>
+        </owl-carousel>
+      </div>
+    </div>
+  </div>
+</section>

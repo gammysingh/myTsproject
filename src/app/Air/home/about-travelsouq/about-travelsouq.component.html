@@ -1,0 +1,39 @@
+<section class="about_bg d-none d-lg-block" [ngStyle]="{backgroundImage: 'url(' + media['about-travelsouq']+')'}">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h3>{{labels['about-travelsouq-title']}}</h3>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- {background: 'linear-gradient(rgba(0,100,50,0.1), rgba(0,0,0,0.9)),url(' + mediaMob['about-travelsouq']+')'} -->
+<section class="about_bg d-sm-block d-lg-none" [ngStyle]="{backgroundImage: 'url(' + mediaMob['about-travelsouq']+')'}">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <h3>{{labels['about-travelsouq-title']}}</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="about_text">
+    <div class="container">
+  <div class="row">
+    <!-- <div class="col-sm-12"> -->
+      <p class="para_text">{{labels['about-travelsouq-description']}}</p>
+
+      <div class="about_item">
+        <div class="col-1-5 text-center" *ngFor="let data of aboutArray">
+          <img *ngIf="data.icon" src="{{strapiURL}}{{data.icon.url}}">
+          <!-- <img *ngIf="!data.icon" src="assets/images/no-image.png"> -->
+          <p>{{data.description}}</p>
+        </div>
+
+      </div>
+
+    <!-- </div> -->
+  </div>
+  </div>
+</section>

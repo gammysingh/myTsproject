@@ -1,0 +1,25 @@
+<section class="ready_fly d-none d-lg-block" [ngStyle]="{backgroundImage: 'url('+media+')'}">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 offset-sm-6">
+        <div class="fly_text">
+          <span>{{data.title}}</span>
+          <a href="{{data.btnlink}}" class="btn">{{data.btntext}}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ready_fly d-sm-block d-lg-none" [ngStyle]="{backgroundImage: 'url('+m_media+')'}">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 offset-sm-6">
+          <div class="fly_text">
+            <span>{{data.title}}</span>
+            <a href="{{data.btnlink}}" class="btn">{{data.btntext}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

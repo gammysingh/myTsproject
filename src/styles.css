@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* @import "~bootstrap/dist/css/bootstrap.min.css"; */
+/* @import url('https://fonts.googleapis.com/css?family=Cairo:400,700&display=swap&subset=arabic,latin-ext'); */
+/* @import "assets/css/docs.theme.min.css"; */
+/* @import "~@angular/material/prebuilt-themes/indigo-pink.css"; */
+
+@import "../node_modules/@angular/material/prebuilt-themes/indigo-pink.css";
+@import "assets/vendor/datepicker/daterangepicker.css";
+@import "assets/css/style.css";
+@import "assets/css/main.css";
+@import "assets/css/responsive.css";
+/* @import "assets/css/owl.carousel.min.css"; */
+/* @import '~@angular/cdk/overlay-prebuilt.css'; */
+
+/* ::ng-deep .ngb-dp-arrow-btn {
+    background: #f9f9f9 !important;
+    color: black !important;
+    font-size: 10px !important;
+    padding: 0px 28px !important; */

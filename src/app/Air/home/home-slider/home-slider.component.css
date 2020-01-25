@@ -1,0 +1,502 @@
+/*============= From and To ==============*/
+
+/*label From and To*/
+::ng-deep .mat-form-field-label {
+  color      : #a2a3ae !important;
+  font-family: 'museo_sans300' !important;
+  font-size  : 15px !important;
+  font       : medium !important
+}
+
+/*underline From and To*/
+::ng-deep .mat-form-field-underline {
+  display: none;
+}
+
+/*From and To overlayPanel*/
+::ng-deep .cdk-overlay-pane {
+  width      : 350px !important;
+  margin-left: -17px;
+}
+
+/*From and To autocomplete-panel upper bar*/
+::ng-deep .mat-autocomplete-panel::before {
+  background: #FE944D;
+  height    : 2px;
+  width     : 50%;
+  content   : "";
+  position  : absolute;
+}
+
+/*From and To autocomplete-panel*/
+::ng-deep .mat-autocomplete-panel {
+  background   : #fcfcfc;
+  list-style   : none;
+  position     : absolute;
+  left         : 0px;
+  top          : 17px;
+  min-width    : 170px;
+  z-index      : 99;
+  border-radius: 0 5px 5px 5px;
+  overflow-y   : auto;
+}
+
+/*From and To autocomplete-panel-slider*/
+::ng-deep .mat-autocomplete-panel::-webkit-scrollbar {
+  width : 6px;
+  height: 6px;
+}
+
+::ng-deep .mat-autocomplete-panel::-webkit-scrollbar-thumb {
+  background-color: #FE924A;
+  border-radius   : 20px;
+}
+
+/*From and To autocomplete-panel-mat-option CSS*/
+::ng-deep .mat-option-text ul li {
+  width: 100% !important;
+}
+
+::ng-deep .mat-option-text ul li a span small {
+  color    : #5f5f5f;
+  font-size: 13px;
+  display  : block;
+}
+
+::ng-deep .mat-option-text ul li a span.value {
+  display   : block;
+  width     : 23%;
+  text-align: right;
+}
+
+.mat-option {
+  height : auto;
+  padding: 0 10px;
+}
+
+/*From and To mat-form-field CSS*/
+::ng-deep .mat-form-field-suffix {
+  width: 30% !important;
+}
+
+::ng-deep .mat-form-field-wrapper {
+  width            : 95%;
+  /* padding-bottom: 10px !important; */
+}
+
+::ng-deep .mat-form-field-flex {
+  width: 88% !important;
+}
+
+/*From and To mat-icon-button CSS*/
+::ng-deep .mat-icon-button:focus {
+  outline: 0 !important;
+}
+
+::ng-deep .mat-icon-button {
+  color           : black !important;
+  background-color: #FCFCFC !important;
+}
+
+/*From and To dropdown-airport CSS*/
+::ng-deep .dropdown-airport {
+  color    : #140053 !important;
+  font-size: 13px;
+  width    : 100%;
+}
+
+/*From and To -> img css
+              <-         */
+.img_form01 {
+  top: 15px !important;
+}
+
+img.r_flag {
+  margin-top: 0px !important;
+}
+
+/*============= Depart and Return ==============*/
+
+/*dropdown-menu for Depart and Return*/
+::ng-deep ngb-datepicker.dropdown-menu {
+  top : 21px !important;
+  left: -39px !important;
+}
+
+/* Depart and Return dropdown-menu upper bar*/
+::ng-deep ngb-datepicker.dropdown-menu::before {
+  background: darkorange;
+  left      : 0;
+  height    : 2px;
+  width     : 32%;
+  content   : "";
+  position  : absolute;
+}
+
+/*------ Depart--------- */
+
+/*Depart image */
+::ng-deep .date_pik_dd {
+  position: absolute !important;
+  right   : 86% !important;
+  top     : 20px;
+}
+
+/*Depart input */
+.ddi {
+  left: 20px;
+  top : 21px;
+}
+
+/*Depart form-group CSS */
+.ddf {
+  width      : 90% !important;
+  margin-left: -11px !important;
+}
+
+/*------ Return--------- */
+
+/*Return image */
+::ng-deep .date_pik_rd {
+  position: absolute !important;
+  right   : 89% !important;
+  top     : 20px;
+}
+
+/*Return input */
+.rdi {
+  left: 20px;
+  top : 21px;
+}
+
+/*============= Traveller ==============*/
+
+/*for input class */
+/* .tdi {
+  left: 20px !important;
+  top : 21px !important;
+} */
+/*for input class */
+.input-group-icon {
+  top: 20px !important;
+}
+
+/* ng-bootstrap traveller dialog modal */
+::ng-deep .modal-open {
+  padding-right: 0px !important;
+  overflow     : auto !important;
+  overflow-x   : hidden !important;
+}
+
+::ng-deep .modal-backdrop.show {
+  opacity: 0 !important;
+}
+
+::ng-deep .modal-open .modal {
+  background   : none !important;
+  top          : 325px;
+  left         : 350px;
+  position     : absolute;
+  /* width     : 335px !important; */
+  height       : auto;
+}
+
+::ng-deep .modal-content::before {
+  background: darkorange;
+  left      : 62px;
+  height    : 2px;
+  width     : 76%;
+  content   : "";
+  position  : absolute;
+  top       : -1px
+}
+
+::ng-deep .modal-content {
+  width        : 53% !important;
+  padding      : 10px;
+  border-radius: 0;
+  left         : 59px;
+  top          : -5px;
+  ;
+}
+
+.modal-footer {
+  display: block !important;
+  padding: inherit !important;
+  color  : #000851;
+}
+
+.modal-button {
+  margin-top: 10px;
+}
+
+.modal-button .btn:hover {
+  background-color: rgba(110, 32, 32, 0.12) !important;
+  border-radius   : 12px;
+}
+
+.modal-button .btn.cancel {
+  color       : rgba(0, 0, 0, .56) !important;
+  margin-right: 68px;
+}
+
+.size h6 {
+  color    : #000851;
+  font-size: 14px;
+}
+
+.size p {
+  font-size     : 12px;
+  padding-bottom: 8px;
+}
+
+.size {
+  float       : left;
+  padding-left: 10px;
+}
+
+.quantity {
+  width: 67%;
+}
+
+.quantity .quantity-field {
+  height       : 30px;
+  position     : relative;
+  left         : 71px;
+  width        : 80px;
+  margin       : 0 0 5px;
+  border-radius: 50px;
+  border-color : #000851;
+}
+
+.quantity input[type='button'] {
+  min-width : 38px;
+  width     : auto;
+  transition: all 300ms ease;
+  background: none
+}
+
+.quantity .button-minus {
+  font-weight: bold;
+  height     : 29px;
+  position   : relative;
+  right      : 18px;
+  font-size  : 19px;
+}
+
+.quantity .button-plus {
+  font-weight: bold;
+  position   : relative;
+  height     : 30px;
+  left       : -17px;
+}
+
+.ddt {
+  margin-bottom: 5px;
+}
+
+.ddt h6 {
+  /* color         : #454a75; */
+  font-size        : 13px;
+  padding-bottom   : 5px;
+}
+
+.popLabel {
+  margin-left: -6px;
+}
+
+.cutom-checkbox1 small {
+  color: #000851
+}
+
+.ddt .cutom-checkbox1 {
+  position              : relative;
+  /* cursor             : pointer;
+  display               : -webkit-box;
+  -webkit-user-select   : none;
+  -moz-user-select      : none;
+  -ms-user-select       : none;
+  user-select           : none;
+  height                : 28px; */
+  padding               : 5px 12px;
+  /* width              : auto;
+  border-radius         : 5px;
+  margin-right          : 7px; */
+}
+
+.ddt .cutom-checkbox1 small:hover {
+  font-size     : 13px;
+  /* color      : #4c4e7f; */
+  font-family   : 'Lato', sans-serif;
+  margin-left   : 15px;
+  display       : block;
+}
+
+.ddt .cutom-checkbox1 small {
+  font-size     : 13px;
+  /* color      : #4c4e7f; */
+  font-family   : 'Lato', sans-serif;
+  margin-left   : 15px;
+  display       : block;
+}
+
+/* Hide the browser's default checkbox */
+.ddt .cutom-checkbox1 input {
+  position   : absolute;
+  /* opacity : 0;
+  cursor     : pointer;
+  height     : 0; */
+  width      : 0;
+}
+
+/* Create a custom checkbox */
+.ddt .checkmark1 {
+  position     : absolute;
+  top          : 7px;
+  left         : 4px;
+  height       : 18px;
+  width        : 18px;
+  border       : solid 1px #ccc8c8;
+  border-radius: 50px;
+}
+
+/* On mouse-over, add a grey background color */
+.ddt .cutom-checkbox1:hover input~.checkmark1 {}
+
+/* When the checkbox is checked, add a blue background */
+.ddt .cutom-checkbox1 input:checked~.checkmark1 {
+  border: solid 1px #000851;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.ddt .checkmark1:after {
+  content : "";
+  position: absolute;
+  display : none;
+}
+
+/* Show the checkmark when checked */
+.ddt .cutom-checkbox1 input:checked~.checkmark1:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.ddt .cutom-checkbox1 .checkmark1:after {
+  left      : 2px;
+  top       : 2px;
+  width     : 12px;
+  height    : 12px;
+  background: #ff7523;
+
+  border-radius: 50px;
+}
+
+/*Traveller input img_memu rotate */
+.input-icon {
+  right    : 5px !important;
+  top      : 6px !important;
+  font-size: 0 !important;
+  width    : 9px !important;
+}
+
+
+/*============= Default input style  ==============*/
+input[type=text] {
+  background  : none;
+  border-style: none;
+  box-shadow  : none;
+  font-size   : 13px;
+  height      : 0;
+  margin      : 0;
+  color       : #000;
+  padding-left: inherit;
+}
+
+/* .slider-form{
+  padding: 4px 10px 0px !important;
+} */
+.slider-form .input-group:after {
+  /* height: 55px !important; */
+  top      : 6px;
+}
+
+/*============= Default calender style  ==============*/
+/*calender-arrow-btn */
+::ng-deep .ngb-dp-arrow-btn {
+  background: none !important;
+  color     : black !important;
+  font-size : 10px !important;
+  padding   : 10px !important;
+  top       : -12px
+}
+
+::ng-deep .btn-light:hover {
+  background-color: cornflowerblue !important;
+}
+
+::ng-deep .ngb-dp-arrow-btn:focus {
+  outline-width: 0 !important;
+}
+
+::ng-deep .ngb-dp-weekday {
+  font-style: inherit !important;
+  color     : #696a88 !important;
+}
+
+/*=============for mobile style  ==============*/
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  ::ng-deep .cdk-overlay-pane {
+    width: 364px !important;
+  }
+
+  ::ng-deep .mat-autocomplete-panel {
+    top: 18px !important;
+  }
+}
+
+@media(min-width: 300px) and (max-width: 480px) {
+  ::ng-deep .cdk-overlay-pane {
+    width: 245px !important;
+  }
+
+  ::ng-deep .mat-autocomplete-panel {
+    max-height: 211px !important;
+  }
+
+  ::ng-deep .mat-autocomplete-panel.toM {
+    top : 12px !important;
+    left: -98px !important;
+  }
+
+  ::ng-deep .mat-autocomplete-panel.toM::before {
+    right: 20px !important;
+  }
+
+  ::ng-deep .ddig ngb-datepicker.dropdown-menu {
+    top        : 11px !important;
+    left       : -48px !important;
+    will-change: transform !important;
+    transform  : translate(41px, 28px) !important;
+  }
+
+  ::ng-deep .ddig ngb-datepicker.dropdown-menu::before {
+    width: 50% !important;
+    left : 16px !important;
+  }
+
+  ::ng-deep .rdig ngb-datepicker.dropdown-menu {
+    top        : 11px !important;
+    left       : -138px !important;
+    will-change: transform !important;
+    transform  : translate(41px, 28px) !important;
+
+  }
+
+  ::ng-deep .rdig ngb-datepicker.dropdown-menu::before {
+    width: 50% !important;
+    left : 96px !important;
+  }
+
+}
